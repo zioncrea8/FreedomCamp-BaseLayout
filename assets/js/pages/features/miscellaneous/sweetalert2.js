@@ -115,7 +115,58 @@ var KTSweetAlert2Demo = function () {
 					confirmButton: "btn btn-primary"
 				}
 			}).then(function (result) {
-				window.location.href = "terminals.html";
+				window.location.href = "terminal_details.html";
+			})
+			
+		});
+
+		$("#kt_sweetalert_demo_4c").click(function (e) {
+			Swal.fire({
+				title: "Successfull!",
+				text: "Termianl Status Created Successfully!",
+				icon: "success",
+				buttonsStyling: false,
+				confirmButtonText: "Continue!",
+				
+				customClass: {
+					confirmButton: "btn btn-primary"
+				}
+			}).then(function (result) {
+				window.location.href = "terminal_status.html";
+			})
+			
+		});
+
+		$("#kt_sweetalert_demo_4d").click(function (e) {
+			Swal.fire({
+				title: "Successfull!",
+				text: "Termianl type Updated Successfully!",
+				icon: "success",
+				buttonsStyling: false,
+				confirmButtonText: "Continue!",
+				
+				customClass: {
+					confirmButton: "btn btn-primary"
+				}
+			}).then(function (result) {
+				window.location.href = "terminal_type.html";
+			})
+			
+		});
+
+		$("#kt_sweetalert_demo_4e").click(function (e) {
+			Swal.fire({
+				title: "Successfull!",
+				text: "Operation Successfully!",
+				icon: "success",
+				buttonsStyling: false,
+				confirmButtonText: "Continue!",
+				
+				customClass: {
+					confirmButton: "btn btn-primary"
+				}
+			}).then(function (result) {
+				window.location.href = "#";
 			})
 			
 		});
@@ -280,6 +331,42 @@ var KTSweetAlert2Demo = function () {
 					Swal.fire(
 						'Activated!',
 						'Agent has been successfully activated.',
+						'success'
+					)
+				}
+			});
+		});
+
+		$('#kt_sweetalert_demo_14_detachTerminal').click(function (e) {
+			Swal.fire({
+				title: 'Are you sure?',
+				text: "Device will be detached from this agent!",
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonText: 'Yes'
+			}).then(function (result) {
+				if (result.value) {
+					Swal.fire(
+						'Terminal Detached!',
+						'This device is successfully detached, Agent has no more access.',
+						'success'
+					)
+				}
+			});
+		});
+
+		$('#kt_sweetalert_demo_14_disableTerminal').click(function (e) {
+			Swal.fire({
+				title: 'Are you sure you want to Disable Terminal?',
+				text: "Device will not be able to perform transcations, while disabled!",
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonText: 'Yes'
+			}).then(function (result) {
+				if (result.value) {
+					Swal.fire(
+						'Terminal Disabled!',
+						'Device can no longer perform transactions.',
 						'success'
 					)
 				}

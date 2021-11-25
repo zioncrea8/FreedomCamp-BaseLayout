@@ -117,7 +117,7 @@ var KTDatatableDataLocalDemo = function() {
 
             {
                 field: 'Initiator',
-                title: 'Initiator',
+                title: 'Created By',
             },
            
             
