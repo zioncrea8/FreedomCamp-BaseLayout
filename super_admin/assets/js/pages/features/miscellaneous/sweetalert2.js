@@ -154,6 +154,23 @@ var KTSweetAlert2Demo = function () {
 			
 		});
 
+		$("#kt_sweetalert_demo_4e_issue").click(function (e) {
+			Swal.fire({
+				title: "Successfull!",
+				text: "Issue Category Updated Successfully!",
+				icon: "success",
+				buttonsStyling: false,
+				confirmButtonText: "Continue!",
+				
+				customClass: {
+					confirmButton: "btn btn-primary"
+				}
+			}).then(function (result) {
+				window.location.href = "issue-category.html";
+			})
+			
+		});
+
 		$("#kt_sweetalert_demo_4e").click(function (e) {
 			Swal.fire({
 				title: "Successfull!",

@@ -331,6 +331,8 @@
 						<!--end::Menu Container-->
 					</div>
 					<!--end::Aside Menu-->
+				
+					<!--end::Aside Menu-->
 				</div>
 				<!--end::Aside-->
 				<!--begin::Wrapper-->
@@ -346,7 +348,7 @@
 									<!--begin::Header Nav-->
 									<div class="d-flex align-items-center flex-wrap mr-2">
 										<!--begin::Page Title-->
-										<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Institution Administrators</h5>
+										<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Configure Issue Category</h5>
 										<!--end::Page Title-->
 										<!--begin::Actions-->
 										
@@ -392,127 +394,343 @@
 						<!--begin::Entry-->
 
 						
-						<div class="container" style="margin-top: -40px;">
+						<div class="container" style="margin-top: -10px;">
 
-							<!--begin::Profile 2-->
-							<div class="d-flex flex-row">
-								<!--begin::Aside-->
-								<div class="flex-row-auto offcanvas-mobile w-300px w-xl-350px" id="kt_profile_aside">
-									<!--begin::Card-->
-									<div class="card card-custom gutter-b">
-										<!--begin::Body-->
-										<div class="card-body pt-15 pb-30">
-											<!--begin::User-->
-											<div class="text-center mb-10">
-												<div class="symbol symbol-60 symbol-circle symbol-xl-90">
-													<div class="symbol-label" style="background-image:url('assets/media/users/Freedom-iconic-dark-circle-11.png')"></div>
-													<!-- <i class="symbol-badge symbol-badge-bottom bg-success"></i> -->
-												</div>
-												<h4 class="font-weight-bold my-2">Freedom Network</h4>
-												<div class="text-muted mb-2">info@freedom.com</div>
-												<span class="label label-light-success label-inline font-weight-bold label-lg">Enabled</span>
-											</div>
-											<!--end::User-->
-
-											<div class="separator separator-solid separator-border-2 mb-10"></div>
-											
-											<!--begin::Nav-->
-											<div class="navi navi-bold navi-hover navi-active navi-link-rounded mt-">
-
-												<div class="navi-item mb-2">
-													<a href="institution-details.html" class="navi-link py-4 ">
-                                                        <span class="navi-icon mr-2">
-                                                            <span class="svg-icon">
-                                                                <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24"></polygon>
-                                                                        <path d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z" fill="#000000" fill-rule="nonzero"></path>
-                                                                        <path d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z" fill="#000000" opacity="0.3"></path>
-                                                                    </g>
-                                                                </svg>
-                                                                <!--end::Svg Icon-->
-                                                            </span>
+							<div class="row">
+                                <div class="col-lg-5 col-xxl-5 ">
+                                    <!--begin::List Widget 4-->
+                                    <div class="card card-custom card-stretch gutter-b">
+                                        <!--begin::Header-->
+                                        <div class="card-header border-0">
+                                            <h3 class="card-title font-weight-bolder text-dark">All Issue Categories</h3>
+                                            <div class="card-toolbar">
+                                                <div class="dropdown dropdown-inline">
+                                                    <!-- <a href="#" class="btn btn-light btn-sm font-size-sm font-weight-bolder dropdown-toggle text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create</a> -->
+                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                        <!--begin::Navigation-->
+                                                        <!-- <ul class="navi navi-hover">
+                                                            <li class="navi-header pb-1">
+                                                                <span class="text-primary text-uppercase font-weight-bold font-size-sm">Add new:</span>
+                                                            </li>
+                                                            <li class="navi-item">
+                                                                <a href="#" class="navi-link">
+                                                                    <span class="navi-icon">
+                                                                        <i class="flaticon2-shopping-cart-1"></i>
+                                                                    </span>
+                                                                    <span class="navi-text">Order</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="navi-item">
+                                                                <a href="#" class="navi-link">
+                                                                    <span class="navi-icon">
+                                                                        <i class="flaticon2-calendar-8"></i>
+                                                                    </span>
+                                                                    <span class="navi-text">Event</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="navi-item">
+                                                                <a href="#" class="navi-link">
+                                                                    <span class="navi-icon">
+                                                                        <i class="flaticon2-graph-1"></i>
+                                                                    </span>
+                                                                    <span class="navi-text">Report</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="navi-item">
+                                                                <a href="#" class="navi-link">
+                                                                    <span class="navi-icon">
+                                                                        <i class="flaticon2-rocket-1"></i>
+                                                                    </span>
+                                                                    <span class="navi-text">Post</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="navi-item">
+                                                                <a href="#" class="navi-link">
+                                                                    <span class="navi-icon">
+                                                                        <i class="flaticon2-writing"></i>
+                                                                    </span>
+                                                                    <span class="navi-text">File</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul> -->
+                                                        <!--end::Navigation-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Header-->
+                                        <!--begin::Body-->
+                                        <div class="card-body pt-2">
+                                            <!--begin::Item-->
+                                            <div class="d-flex align-items-center">
+                                                <!--begin::Bullet-->
+                                                <!-- <span class="bullet bullet-bar bg-success align-self-stretch"></span> -->
+                                                <!--end::Bullet-->
+                                                <!--begin::Checkbox-->
+                                                <label class="checkbox checkbox-lg checkbox-light-secondary checkbox-inline flex-shrink-0 m-0 mx-4">
+                                                    <input type="checkbox" disabled name="select" value="1" />
+                                                    <span></span>
+                                                </label>
+                                                <!--end::Checkbox-->
+                                                <!--begin::Text-->
+                                                <div class="d-flex flex-column flex-grow-1">
+                                                    <a href="#" class="text-dark-75 text-hover-secondary font-weight-bold font-size-lg mb-1">Wallet funding issues</a>
+                                                    <span class="text-muted font-weight-bold">Admin</span>
+                                                </div>
+                                                <!--end::Text-->
+                                                <!--begin::Dropdown-->
+                                                <div class=" ml-2" data-toggle="tooltip" title="Update Status" data-placement="left">
+                                                    
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                                        <span class="svg-icon svg-icon-md svg-icon-primary">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)"></path>
+                                                                    <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
                                                         </span>
-                                                        <span class="navi-text font-size-lg">Institution Overview</span>
                                                     </a>
-												</div>
-
-												<div class="navi-item mb-2">
-													<a href="institution-basic-info.html" class="navi-link py-4 ">
-                                                        <span class="navi-icon mr-2">
-                                                            <span class="svg-icon"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Home\Commode1.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"/>
-																	<path d="M5.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L5.5,11 C4.67157288,11 4,10.3284271 4,9.5 L4,5.5 C4,4.67157288 4.67157288,4 5.5,4 Z M11,6 C10.4477153,6 10,6.44771525 10,7 C10,7.55228475 10.4477153,8 11,8 L13,8 C13.5522847,8 14,7.55228475 14,7 C14,6.44771525 13.5522847,6 13,6 L11,6 Z" fill="#000000" opacity="0.3"/>
-																	<path d="M5.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M11,15 C10.4477153,15 10,15.4477153 10,16 C10,16.5522847 10.4477153,17 11,17 L13,17 C13.5522847,17 14,16.5522847 14,16 C14,15.4477153 13.5522847,15 13,15 L11,15 Z" fill="#000000"/>
-																</g>
-															</svg><!--end::Svg Icon--></span>
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                                        <span class="svg-icon svg-icon-md svg-icon-danger">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                                    <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
                                                         </span>
-                                                        <span class="navi-text font-size-lg">Institution information</span>
                                                     </a>
-												</div>
-
-												<div class="navi-item mb-2">
-													<a href="institution-change-password.html" class="navi-link py-4 ">
-                                                        <span class="navi-icon mr-2">
-                                                            <span class="svg-icon "><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Home\Key.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"/>
-																	<polygon fill="#000000" opacity="0.3" transform="translate(8.885842, 16.114158) rotate(-315.000000) translate(-8.885842, -16.114158) " points="6.89784488 10.6187476 6.76452164 19.4882481 8.88584198 21.6095684 11.0071623 19.4882481 9.59294876 18.0740345 10.9659914 16.7009919 9.55177787 15.2867783 11.0071623 13.8313939 10.8837471 10.6187476"/>
-																	<path d="M15.9852814,14.9852814 C12.6715729,14.9852814 9.98528137,12.2989899 9.98528137,8.98528137 C9.98528137,5.67157288 12.6715729,2.98528137 15.9852814,2.98528137 C19.2989899,2.98528137 21.9852814,5.67157288 21.9852814,8.98528137 C21.9852814,12.2989899 19.2989899,14.9852814 15.9852814,14.9852814 Z M16.1776695,9.07106781 C17.0060967,9.07106781 17.6776695,8.39949494 17.6776695,7.57106781 C17.6776695,6.74264069 17.0060967,6.07106781 16.1776695,6.07106781 C15.3492424,6.07106781 14.6776695,6.74264069 14.6776695,7.57106781 C14.6776695,8.39949494 15.3492424,9.07106781 16.1776695,9.07106781 Z" fill="#000000" transform="translate(15.985281, 8.985281) rotate(-315.000000) translate(-15.985281, -8.985281) "/>
-																</g>
-															</svg><!--end::Svg Icon--></span>
+                                                    <!-- <a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="ki ki-bold-more-hor"></i>
+                                                    </a> -->
+                                                </div>
+                                                <!--end::Dropdown-->
+                                            </div>
+                                            <!--end:Item-->
+                                            <!--begin::Item-->
+                                            <div class="d-flex align-items-center mt-10">
+                                                <!--begin::Bullet-->
+                                                <!-- <span class="bullet bullet-bar bg-success align-self-stretch"></span> -->
+                                                <!--end::Bullet-->
+                                                <!--begin::Checkbox-->
+                                                <label class="checkbox checkbox-lg checkbox-light-secondary checkbox-inline flex-shrink-0 m-0 mx-4">
+                                                    <input type="checkbox" disabled name="select" value="1" />
+                                                    <span></span>
+                                                </label>
+                                                <!--end::Checkbox-->
+                                                <!--begin::Text-->
+                                                <div class="d-flex flex-column flex-grow-1">
+                                                    <a href="#" class="text-dark-75 text-hover-secondary font-weight-bold font-size-lg mb-1">Non impacted withdrawal</a>
+                                                    <span class="text-muted font-weight-bold">Admin</span>
+                                                </div>
+                                                <!--end::Text-->
+                                                <!--begin::Dropdown-->
+                                                <div class=" ml-2" data-toggle="tooltip" title="Update Status" data-placement="left">
+                                                    
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                                        <span class="svg-icon svg-icon-md svg-icon-primary">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)"></path>
+                                                                    <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
                                                         </span>
-                                                        <span class="navi-text font-size-lg">Change Password</span>
                                                     </a>
-												</div>
-
-												<div class="navi-item mb-2">
-													<a href="institution-access-configuration.html" class="navi-link py-4 ">
-                                                        <span class="navi-icon mr-2">
-                                                            <span class="svg-icon "><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\General\Settings-1.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"/>
-																	<path d="M7,3 L17,3 C19.209139,3 21,4.790861 21,7 C21,9.209139 19.209139,11 17,11 L7,11 C4.790861,11 3,9.209139 3,7 C3,4.790861 4.790861,3 7,3 Z M7,9 C8.1045695,9 9,8.1045695 9,7 C9,5.8954305 8.1045695,5 7,5 C5.8954305,5 5,5.8954305 5,7 C5,8.1045695 5.8954305,9 7,9 Z" fill="#000000"/>
-																	<path d="M7,13 L17,13 C19.209139,13 21,14.790861 21,17 C21,19.209139 19.209139,21 17,21 L7,21 C4.790861,21 3,19.209139 3,17 C3,14.790861 4.790861,13 7,13 Z M17,19 C18.1045695,19 19,18.1045695 19,17 C19,15.8954305 18.1045695,15 17,15 C15.8954305,15 15,15.8954305 15,17 C15,18.1045695 15.8954305,19 17,19 Z" fill="#000000" opacity="0.3"/>
-																</g>
-															</svg><!--end::Svg Icon--></span>
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                                        <span class="svg-icon svg-icon-md svg-icon-danger">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                                    <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
                                                         </span>
-                                                        <span class="navi-text font-size-lg">Configure Institution Accessibility</span>
                                                     </a>
-												</div>
-
-												<div class="navi-item mb-2">
-													<a href="institution-admin-configuration.html" class="navi-link py-4 active">
-                                                        <span class="navi-icon mr-2">
-                                                            <span class="svg-icon "><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\General\Settings-1.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"/>
-																	<path d="M7,3 L17,3 C19.209139,3 21,4.790861 21,7 C21,9.209139 19.209139,11 17,11 L7,11 C4.790861,11 3,9.209139 3,7 C3,4.790861 4.790861,3 7,3 Z M7,9 C8.1045695,9 9,8.1045695 9,7 C9,5.8954305 8.1045695,5 7,5 C5.8954305,5 5,5.8954305 5,7 C5,8.1045695 5.8954305,9 7,9 Z" fill="#000000"/>
-																	<path d="M7,13 L17,13 C19.209139,13 21,14.790861 21,17 C21,19.209139 19.209139,21 17,21 L7,21 C4.790861,21 3,19.209139 3,17 C3,14.790861 4.790861,13 7,13 Z M17,19 C18.1045695,19 19,18.1045695 19,17 C19,15.8954305 18.1045695,15 17,15 C15.8954305,15 15,15.8954305 15,17 C15,18.1045695 15.8954305,19 17,19 Z" fill="#000000" opacity="0.3"/>
-																</g>
-															</svg><!--end::Svg Icon--></span>
+                                                    <!-- <a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="ki ki-bold-more-hor"></i>
+                                                    </a> -->
+                                                </div>
+                                                <!--end::Dropdown-->
+                                            </div>
+                                            <!--end:Item-->
+                                            <!--begin::Item-->
+                                            <div class="d-flex align-items-center mt-10">
+                                                <!--begin::Bullet-->
+                                                <!-- <span class="bullet bullet-bar bg-primary align-self-stretch"></span> -->
+                                                <!--end::Bullet-->
+                                                <!--begin::Checkbox-->
+                                                <label class="checkbox checkbox-lg checkbox-light-secondary checkbox-inline flex-shrink-0 m-0 mx-4">
+                                                    <input type="checkbox" disabled value="1" />
+                                                    <span></span>
+                                                </label>
+                                                <!--end::Checkbox-->
+                                                <!--begin::Text-->
+                                                <div class="d-flex flex-column flex-grow-1">
+                                                    <a href="#" class="text-dark-75 text-hover-secondary font-weight-bold font-size-lg mb-1"> Deposit</a>
+                                                    <span class="text-muted font-weight-bold">Admin</span>
+                                                </div>
+                                                <!--end::Text-->
+                                                <!--begin::Dropdown-->
+                                                <div class=" ml-2" data-toggle="tooltip" title="Update Status" data-placement="left">
+                                                    
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                                        <span class="svg-icon svg-icon-md svg-icon-primary">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)"></path>
+                                                                    <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
                                                         </span>
-                                                        <span class="navi-text font-size-lg">Configure Institution Administrators</span>
                                                     </a>
-												</div>
-
-												 
-
-											</div>
-											
-											<!--end::Nav-->
-										</div>
-										<!--end::Body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Aside-->
-								<!--begin::Content-->
-								<div class="flex-row-fluid ml-lg-8">
-									<!--begin::Card-->
-									<div class="card card-custom gutter-b example example-compact">
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                                        <span class="svg-icon svg-icon-md svg-icon-danger">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                                    <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
+                                                        </span>
+                                                    </a>
+                                                    <!-- <a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="ki ki-bold-more-hor"></i>
+                                                    </a> -->
+                                                </div>
+                                                <!--end::Dropdown-->
+                                            </div>
+                                            <!--end::Item-->
+                                            
+                                            <!--begin::Item-->
+                                            <div class="d-flex align-items-center mt-10">
+                                                <!--begin::Bullet-->
+                                                <!-- <span class="bullet bullet-bar bg-warning align-self-stretch"></span> -->
+                                                <!--end::Bullet-->
+                                                <!--begin::Checkbox-->
+                                                <label class="checkbox checkbox-lg checkbox-light-secondary checkbox-inline flex-shrink-0 m-0 mx-4">
+                                                    <input type="checkbox" disabled value="1" />
+                                                    <span></span>
+                                                </label>
+                                                <!--end::Checkbox-->
+                                                <!--begin::Text-->
+                                                <div class="d-flex flex-column flex-grow-1">
+                                                    <a href="#" class="text-dark-75 font-size-sm font-weight-bold font-size-lg mb-1">Bill payment</a>
+                                                    <span class="text-muted font-weight-bold">Akinola Akindele</span>
+                                                </div>
+                                                <!--end::Text-->
+                                                <!--begin: Dropdown-->
+                                                <div class=" ml-2" data-toggle="tooltip" title="Update Status" data-placement="left">
+                                                    
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                                        <span class="svg-icon svg-icon-md svg-icon-primary">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)"></path>
+                                                                    <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                                        <span class="svg-icon svg-icon-md svg-icon-danger">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                                    <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
+                                                        </span>
+                                                    </a>
+                                                    <!-- <a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="ki ki-bold-more-hor"></i>
+                                                    </a> -->
+                                                </div>
+                                                <!--end::Dropdown-->
+                                            </div>
+                                            <!--end::Item-->
+                                            <!--begin::Item-->
+                                            <div class="d-flex align-items-center mt-10">
+                                                <!--begin::Bullet-->
+                                                <!-- <span class="bullet bullet-bar bg-danger align-self-stretch"></span> -->
+                                                <!--end::Bullet-->
+                                                <!--begin::Checkbox-->
+                                                <label class="checkbox checkbox-lg checkbox-light-danger checkbox-inline flex-shrink-0 m-0 mx-4" >
+                                                    <input type="" value="1" />
+                                                    <span></span>
+                                                </label>
+                                                <!--end::Checkbox:-->
+                                                <!--begin::Title-->
+                                                <div class="d-flex flex-column flex-grow-1">
+                                                    <input type="email" class="form-control form-control-sm col-xl-8" placeholder="Network Issues">
+                                                    <span class="text-muted font-weight-bold">Agent Supervisor</span>
+                                                </div>
+                                                <!--end::Text-->
+                                                <!--begin: Dropdown-->
+                                                <div class=" ml-2" data-toggle="tooltip" title="Update Status" data-placement="left">
+                                                    
+                                                    <button type="reset" id="kt_sweetalert_demo_4e" class="btn btn-icon btn-primary btn-sm mx-3">
+                                                        <span class="svg-icon svg-icon-light svg-icon-sm"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Navigation\Check.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                <polygon points="0 0 24 0 24 24 0 24"/>
+                                                                <path d="M6.26193932,17.6476484 C5.90425297,18.0684559 5.27315905,18.1196257 4.85235158,17.7619393 C4.43154411,17.404253 4.38037434,16.773159 4.73806068,16.3523516 L13.2380607,6.35235158 C13.6013618,5.92493855 14.2451015,5.87991302 14.6643638,6.25259068 L19.1643638,10.2525907 C19.5771466,10.6195087 19.6143273,11.2515811 19.2474093,11.6643638 C18.8804913,12.0771466 18.2484189,12.1143273 17.8356362,11.7474093 L14.0997854,8.42665306 L6.26193932,17.6476484 Z" fill="#000000" fill-rule="nonzero" transform="translate(11.999995, 12.000002) rotate(-180.000000) translate(-11.999995, -12.000002) "/>
+                                                            </g>
+                                                        </svg><!--end::Svg Icon--></span>
+                                                    </button>
+                                                    <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                                        <span class="svg-icon svg-icon-md svg-icon-danger">
+                                                            <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                                    <path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                                    <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3"></path>
+                                                                </g>
+                                                            </svg>
+                                                            <!--end::Svg Icon-->
+                                                        </span>
+                                                    </a>
+                                                    <!-- <a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="ki ki-bold-more-hor"></i>
+                                                    </a> -->
+                                                </div>
+                                                <!--end::Dropdown-->
+                                            </div>
+                                            <!--end::Item-->
+                                            
+                                        </div>
+                                        <!--end::Body-->
+                                    </div>
+                                    <!--end:List Widget 4-->
+                                </div>
+                                <div class="col-lg-7 col-xxl-7">
+                                    <!--begin::Container-->
+                                    <div class="card card-custom gutter-b example example-compact">
                                         <!-- <div class="card-header">
                                             <h4 class="card-title">Institution Details</h4>
                                             
@@ -522,61 +740,43 @@
                                                 <span class="card-icon">
                                                     
                                                 </span>
-                                                <h3 class="card-label">Admin User Details</h3>
+                                                <h3 class="card-label">Create A New Issue Category </h3>
                                             </div>
-                                            <div class="card-toolbar">
-                                                <a href="#" class="btn btn-sm btn-primary font-weight-bold">
-                                                Edit information</a>
-                                            </div>
+                                            
                                         </div>
                                         
                                         <!--begin::Form-->
                                         <form class="form">
                                             <!--begin::Body-->
-                                            <div class="card-body">
+                                            <div class="card-body pt-8">
                                                 <!-- <div class="row">
                                                     <label class="col-xl-3"></label>
                                                     <div class="col-lg-9 col-xl-6">
                                                         <h5 class="font-weight-bold mb-6">Dispute Details</h5>
                                                     </div>
                                                 </div> -->
-                                               
-
-												<div class="form-group row">
-                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">First Name</label>
-                                                    <div class="col-lg-12 col-xl-8">
-                                                        <input class="form-control form-control-lg form-control-solid" type="text" value="Siony" disabled />
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">Last Name</label>
-                                                    <div class="col-lg-9 col-xl-8">
-                                                        <input class="form-control form-control-lg form-control-solid" type="text" value="Olukoya" disabled />
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">Email</label>
-                                                    <div class="col-lg-9 col-xl-8">
-                                                        <input class="form-control form-control-lg form-control-solid" type="text" value="siony.olukoya@3lineng.com" disabled />
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">Mobile Number</label>
-                                                    <div class="col-lg-9 col-xl-8">
-                                                        <input class="form-control form-control-lg form-control-solid" type="text" value="08187654789" disabled />
-                                                    </div>
-                                                </div>
-												<div class="form-group row">
-                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">Password</label>
-                                                    <div class="col-lg-9 col-xl-8">
-                                                        <input class="form-control form-control-lg form-control-solid" type="password" value="08187654789" disabled />
-                                                    </div>
-                                                </div>
-
-												<div class="mt-15 mb-10 font-weight-bold text-dark"><h5 class="card-label">Update Status</h5></div>
-
-												<!-- Begin onscreen alert -->
-												<div class="alert alert-custom alert-light-secondary alert-shadow fade show mt-10 mb-20 col-xl-11" role="alert">
+                                                <!-- <div class="form-group row">
+												<label class="col-xl-2 col-lg-2 col-form-label text-left pl-7 pl-6">Institution Logo</label>
+												<div class="col-lg-9 col-xl-6">
+													<div class="image-input image-input-empty image-input-outline" id="kt_image_5" style="background-image: url(assets/media/users/blank.png)">
+														<div class="image-input-wrapper"></div>
+														<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
+															<i class="fa fa-pen icon-sm text-muted"></i>
+															<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
+															<input type="hidden" name="profile_avatar_remove">
+														</label>
+														<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="" data-original-title="Cancel avatar">
+															<i class="ki ki-bold-close icon-xs text-muted"></i>
+														</span>
+														<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="remove" data-toggle="tooltip" title="" data-original-title="Remove avatar">
+															<i class="ki ki-bold-close icon-xs text-muted"></i>
+														</span>
+													</div>
+													<span class="form-text text-muted">Select to input image</span>
+												</div>
+											</div> -->
+                                                <!-- Begin onscreen alert -->
+												<div class="alert alert-custom alert-light-secondary alert-shadow fade show mt-0 mb-20 col-xl-11" role="alert">
                                                     <div class="alert-icon">
                                                         <span class="svg-icon svg-icon-warning svg-icon-xl"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Code\Warning-2.svg-->
                                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -589,36 +789,39 @@
                                                             </svg><!--end::Svg Icon-->
                                                         </span>
                                                     </div>
-                                                    <div class="alert-text text-dark font-weight-bold">Toggling switch will Disable User. <span class="font-weight-bolder">User Settings </span> <br>
-														<code style="font-weight:900" class="text-warning bg-light-warning">Important!</code> Without this permission, The admin User will be unable to perform Role actions. 
-                                                    </div>
-                                                </div>
-												<div class="form-group row ml-10 mb-20">
-                                                    
-                                                    <label class="col-2 col-form-label font-weight-bolder font-size-lg">Enabled</label>
-                                                    <div class="col-3">
-                                                        <span class="switch switch-lg switch-icon">
-                                                            <label>
-                                                                <input type="checkbox" checked="checked" name="select">
-                                                                <span></span>
-                                                            </label>
-                                                        </span>
+                                                    <div class="alert-text text-dark font-weight-bold">By creating a new category, you can map issues to specified  <span class="font-weight-bolder">Categories </span>
+														<code style="font-weight:900" class="text-warning bg-light-warning">Important!</code> Please follow conventional naming rules as specified. 
                                                     </div>
                                                 </div>
                                                 <!-- End onscreen alert -->
+                                                <div class="form-group row">
+                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">Category Title</label>
+                                                    <div class="col-lg-12 col-xl-9">
+                                                        <input class="form-control form-control-lg form-control-solid" type="text" value="" style="height: 4rem;">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-2 col-lg-2 col-form-label text-left pl-7">Description</label>
+                                                    <div class="col-lg-9 col-xl-9">
+                                                        <textarea class="form-control form-control-lg form-control-solid" type="text-area" value="Describe your issue category here"></textarea>
+                                                    </div>
+                                                </div>
 												    
-												    
+                                            </div><!--end::Body-->
+											<div class="card-footer">
+                                                <button type="reset" class="btn btn-primary ml-15 mr-2" id="kt_sweetalert_demo_4e">Submit</button>
+												<!-- <button type="reset" class="btn btn-secondary">Cancel</button> -->
+												<button type="submit" class="btn btn-secondary mr-2" formaction="terminals.html">Cancel</button>
                                             </div>
-											<!--end::Body-->
-											
                                         </form>
                                         <!--end::Form-->
                                     </div>
-								</div>
-								<!--end::Content-->
-							</div>
-							<!--end::Profile 2-->
-							
+							<!--end::Container-->
+                                </div>
+                               
+                                
+                                
+                            </div>
                             
                             
 							
@@ -669,12 +872,12 @@
 				<!--begin::Header-->
 				<div class="d-flex align-items-center mt-5">
 					<div class="symbol symbol-100 mr-5">
-						<div class="symbol-label" style="background-image:url('assets/media/users/300_21.jpg')"></div>
+						<div class="symbol-label" style="background-image:url('assets/media/users/Freedom-iconic-dark-circle-11.png')"></div>
 						<i class="symbol-badge bg-success"></i>
 					</div>
 					<div class="d-flex flex-column">
 						<a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">James Jones</a>
-						<div class="text-muted mt-1">Application Developer</div>
+						<div class="text-muted mt-1">Super admin</div>
 						<div class="navi mt-2">
 							<a href="#" class="navi-item">
 								<span class="navi-link p-0 pb-2">
@@ -1891,289 +2094,7 @@
 			<!--begin::Content-->
 			<div class="offcanvas-content">
 				<!--begin::Wrapper-->
-				<div class="offcanvas-wrapper mb-5 scroll-pull">
-					<h5 class="font-weight-bold mb-4 text-center">Demo 1</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo offcanvas-demo-active">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo1.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo1/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo1/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 2</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo2.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo2/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo2/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 3</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo3.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo3/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo3/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 4</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo4.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo4/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo4/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 5</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo5.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo5/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo5/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 6</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo6.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo6/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo6/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 7</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo7.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo7/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo7/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 8</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo8.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo8/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo8/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 9</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo9.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo9/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo9/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 10</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo10.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo10/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo10/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 11</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo11.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="https://keenthemes.com/metronic/preview/demo11/index.html" class="btn font-weight-bold btn-primary btn-shadow" target="_blank">Default</a>
-							<a href="https://keenthemes.com/metronic/preview/demo11/rtl/index.html" class="btn btn-light btn-shadow" target="_blank">RTL Version</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 12</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo12.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 13</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo13.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 14</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo14.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 15</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo15.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 16</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo16.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 17</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo17.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 18</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo18.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 19</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo19.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 20</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo20.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 21</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo21.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 22</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo22.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 23</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo23.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 24</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo24.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 25</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo25.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 26</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo26.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 27</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo27.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 28</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo28.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 29</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo29.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-					<h5 class="font-weight-bold mb-4 text-center">Demo 30</h5>
-					<div class="overlay rounded-lg mb-8 offcanvas-demo">
-						<div class="overlay-wrapper rounded-lg">
-							<img src="assets//../../../../../../doc/assets/img/demos/demo30.png" alt="" class="w-100" />
-						</div>
-						<div class="overlay-layer">
-							<a href="#" class="btn font-weight-bold btn-primary btn-shadow disabled">Coming soon</a>
-						</div>
-					</div>
-				</div>
+				
 				<!--end::Wrapper-->
 				<!--begin::Purchase-->
 				<div class="offcanvas-footer">
@@ -2198,9 +2119,9 @@
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js?v=7.0.5"></script>
-		<script src="assets/js/pages/crud/ktdatatable/base/data-superadmin.js"></script>
+		<script src="assets/js/pages/crud/ktdatatable/base/data-dispute.js"></script>
         <script src="assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js?v=7.0.5"></script>
-        <script src="assets/js/pages/features/miscellaneous/sweetalert2.js?v=7.0.5"></script>
+        <script src="assets/js/pages/features/miscellaneous/sweetalert2.js"></script>
         
 
 
