@@ -419,7 +419,7 @@ var KTSweetAlert2Demo = function () {
 					confirmButton: "btn btn-primary"
 				}
 			}).then(function (result) {
-				window.location.href = "issuelog.html";
+				window.location.href = "issue-logs.html";
 			})
 			
 		});

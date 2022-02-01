@@ -8,12 +8,12 @@ var KTDatatableDataLocalDemo = function() {
     var demo = function() {
         var dataJSONArray = JSON.parse('[ {"RecordID":1,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":1,"Type":1},\n' +
             '{"RecordID":2,"Agent Name":"Victoria Abiola","Username":"Bami.ajanaku","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":2,"Type":2},\n' +
-            '{"RecordID":3,"Agent Name":"Victoria Abiola","Username":"sarah.doe","Request Date":"11/10/2020","Complaint":"Pls Reverse my...","Category":"Dispute","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":1,"Type":2},\n' +
-            '{"RecordID":4,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":3,"Type":1},\n' +
-            '{"RecordID":5,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"login error","Category":"dispute","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":3,"Type":1},\n' +
-            '{"RecordID":6,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"How can i get a new terminal","Category":"Enquiry","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":2,"Type":3},\n' +
+            '{"RecordID":3,"Agent Name":"Victoria Abiola","Username":"sarah.doe","Request Date":"11/10/2020","Complaint":"Pls Reverse my...","Category":"Dispute","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":3,"Type":2},\n' +
+            '{"RecordID":4,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":4,"Type":1},\n' +
+            '{"RecordID":5,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"login error","Category":"dispute","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":5,"Type":1},\n' +
+            '{"RecordID":6,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"How can i get a new terminal","Category":"Enquiry","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":6,"Type":3},\n' +
             '{"RecordID":7,"Agent Name":"Victoria Abiola","Username":"vic.abiola","Request Date":"11/10/2020","Complaint":"How can i logout...","Category":"Enquiry","Resolved by":"Rachael","Resolution Date":"11/10/2020","Status":2,"Type":3},\n' +
-            '{"RecordID":8,"AgentID":"FRE3D0M","Username":"peace.martin","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":2,"Type":3},\n' +
+            '{"RecordID":8,"AgentID":"FRE3D0M","Username":"peace.martin","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":6,"Type":3},\n' +
             '{"RecordID":9,"AgentID":"TRGE6777","Username":"tin.spray","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":1,"Type":3},\n' +
             // '{"RecordID":10,"AgentID":"FUMNI322","Username":"ben.bard,"TerminalID":"2X014FDA","TradingWallet":"22905839033","DateCreated":"8/27/2017","Phone":"08034562811","email":"vito01@gmail.com","Status":2,"Type":3},\n' +
             '{"RecordID":11,"AgentID":"RTA652S3","Username":"ranti.abiola","Request Date":"11/10/2020","Complaint":"login error","Category":"Complaint","Resolved by":"Timothy Owolabi","Resolution Date":"11/10/2020","Status":1,"Type":1},\n' +
@@ -67,7 +67,7 @@ var KTDatatableDataLocalDemo = function() {
             // }, 
             {
                 field: 'Username',
-                title: 'Username',
+                title: 'Issuer Name',
                 template: function(row) {
                     return row.Username;
                 },
@@ -79,25 +79,27 @@ var KTDatatableDataLocalDemo = function() {
                 type: 'date',
                 format: 'MM/DD/YYYY',
             },
-            {
-                field: 'Complaint',
-                title: 'Complaint',
-            },
+            
             {
                 field: 'Category',
                 title: 'Category',
             },
             
             {
-                field: 'Resolved by',
-                title: 'Resolved by',
+                field: 'Complaint',
+                title: 'Issue Description',
             },
+            
             {
-                field: 'Resolution Date',
-                title: 'Resolution Date',
-                type: 'date',
-                format: 'MM/DD/YYYY',
+                field: 'Resolved by',
+                title: 'Assigned to',
             },
+            // {
+            //     field: 'Resolution Date',
+            //     title: 'Resolution Date',
+            //     type: 'date',
+            //     format: 'MM/DD/YYYY',
+            // },
             // {
             //     field: 'Type',
             //     title: 'Agent Type',
@@ -137,8 +139,20 @@ var KTDatatableDataLocalDemo = function() {
                             'class': ' label-light-warning'
                         },
                         3: {
-                            'title': 'Rejected',
+                            'title': 'Timeline Expire',
                             'class': ' label-light-danger'
+                        },
+                        4: {
+                            'title': 'In Progress',
+                            'class': ' label-light-primary'
+                        },
+                        5: {
+                            'title': 'Not Assigned',
+                            'class': ' text-muted'
+                        },
+                        6: {
+                            'title': 'Any other',
+                            'class': ' label-secondary'
                         },
                         
                     };
