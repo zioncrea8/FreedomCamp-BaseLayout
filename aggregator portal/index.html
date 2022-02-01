@@ -5,7 +5,7 @@
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
-		<title>Camp | Dashboard</title>
+		<title>Camp | Aggregator Dashboard</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!--begin::Fonts-->
@@ -13,10 +13,7 @@
 		<!--end::Fonts-->
 		<!--begin::Page Vendors Styles(used by this page)-->
 		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=7.0.5" rel="stylesheet" type="text/css" />
-        <!--end::Page Vendors Styles-->
-        <!--begin::Page Custom Styles(used by this page)-->
-		<link href="assets/css/pages/wizard/wizard-4.css?v=7.0.5" rel="stylesheet" type="text/css" />
-		<!--end::Page Custom Styles-->
+		<!--end::Page Vendors Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.css?v=7.0.5" rel="stylesheet" type="text/css" />
 		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.5" rel="stylesheet" type="text/css" />
@@ -38,7 +35,7 @@
 		<div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
 			<!--begin::Logo-->
 			<a href="index.html">
-				<img alt="Logo" src="assets/media/logos/logo-light.png" />
+				<img alt="Logo" src="assets/media/logos/campp.png" />
 			</a>
 			<!--end::Logo-->
 			<!--begin::Toolbar-->
@@ -78,10 +75,10 @@
 				<!--begin::Aside-->
 				<div class="aside aside-left aside-fixed d-flex flex-column flex-row-auto" id="kt_aside">
 					<!--begin::Brand-->
-					<div class="brand flex-column-auto" id="kt_brand">
+					<div class="brand flex-column-auto" id="kt_brand" kt-hidden-height="65" >
 						<!--begin::Logo-->
 						<a href="index.html" class="brand-logo">
-							<img alt="Logo" src="assets/media/logos/campp.png" />
+							<img alt="Logo" src="assets/media/logos/campp.png">
 						</a>
 						<!--end::Logo-->
 						<!--begin::Toggle-->
@@ -90,9 +87,9 @@
 								<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Angle-double-left.svg-->
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										<polygon points="0 0 24 0 24 24 0 24" />
-										<path d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z" fill="#000000" fill-rule="nonzero" transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999)" />
-										<path d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999)" />
+										<polygon points="0 0 24 0 24 24 0 24"></polygon>
+										<path d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z" fill="#000000" fill-rule="nonzero" transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999)"></path>
+										<path d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999)"></path>
 									</g>
 								</svg>
 								<!--end::Svg Icon-->
@@ -253,7 +250,7 @@
 									<!--begin::Header Nav-->
 									<div class="d-flex align-items-center flex-wrap mr-2">
 										<!--begin::Page Title-->
-										<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Agents</h5>
+										<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Dashboard</h5>
 										<!--end::Page Title-->
 										<!--begin::Actions-->
 										
@@ -278,7 +275,7 @@
 								<div class="topbar-item">
 									<div class="btn btn-icon w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
 										<span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
-										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Sean</span>
+										<span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Siony</span>
 										<span class="symbol symbol-35 symbol-light-success">
 											<span class="symbol-label font-size-h5 font-weight-bold">S</span>
 										</span>
@@ -300,620 +297,358 @@
 
 						
 						<div class="container" style="margin-top: -40px;">
-                            <div class="card card-custom card-transparent">
-                                <div class="card-body p-0">
-                                    <!--begin: Wizard-->
-                                    <div class="wizard wizard-4" id="kt_wizard_v4" data-wizard-state="step-first" data-wizard-clickable="true">
-                                        <!--begin: Wizard Nav-->
-                                        <div class="wizard-nav">
-                                            <div class="wizard-steps">
-                                                <!--begin::Wizard Step 1 Nav-->
-                                                <div class="wizard-step" data-wizard-type="step" data-wizard-state="current">
-                                                    <div class="wizard-wrapper">
-                                                        <div class="wizard-number">1</div>
-                                                        <div class="wizard-label">
-                                                            <div class="wizard-title">Agent Information</div>
-                                                            <div class="wizard-desc">Enter Agent information</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--end::Wizard Step 1 Nav-->
-                                                <!--begin::Wizard Step 2 Nav-->
-                                                <div class="wizard-step" data-wizard-type="step">
-                                                    <div class="wizard-wrapper">
-                                                        <div class="wizard-number">2</div>
-                                                        <div class="wizard-label">
-															<div class="wizard-title">Settlement Information</div>
-                                                            <div class="wizard-desc">Specify settlement Settings</div>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--end::Wizard Step 2 Nav-->
-                                                <!--begin::Wizard Step 3 Nav-->
-                                                <div class="wizard-step" data-wizard-type="step">
-                                                    <div class="wizard-wrapper">
-                                                        <div class="wizard-number">3</div>
-                                                        <div class="wizard-label">
-															<div class="wizard-title">Documents</div>
-                                                            <div class="wizard-desc">Upload Agent's document</div>
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--end::Wizard Step 3 Nav-->
-                                                <!--begin::Wizard Step 4 Nav-->
-                                                <div class="wizard-step" data-wizard-type="step">
-                                                    <div class="wizard-wrapper">
-                                                        <div class="wizard-number">4</div>
-                                                        <div class="wizard-label">
-															<div class="wizard-title">Terminal Information</div>
-                                                            <div class="wizard-desc">Agent's Terminal details </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--end::Wizard Step 4 Nav-->
-                                            </div>
-                                        </div>
-                                        <!--end: Wizard Nav-->
-                                        <!--begin: Wizard Body-->
-                                        <div class="card card-custom card-shadowless rounded-top-0">
-                                            <div class="card-body">
-                                                <!-- <div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10"> -->
-                                                    <!-- <div class="col-xl-12 col-xxl-7"> -->
-                                                        <!--begin: Wizard Form-->
-                                                        <form class="form" id="kt_form">
-															<!--begin: Wizard Step 1-->
-															
+							
+							<div class="row">
+								<div class="col-xl-2">
+									<!--begin::Stats Widget 29-->
+									<div class="card card-custom bgi-no-repeat card-stretch gutter-b" style="background-position: right top; background-size: 30% auto; background-image: url(assets/media/svg/shapes/abstract-1.svg)">
+										<!--begin::Body-->
+										<div class="card-body">
+											<span class="svg-icon svg-icon-2x svg-icon-info">
+												<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Mail-opened.svg-->
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<rect x="0" y="0" width="24" height="24" />
+														<path d="M6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 Z M7.5,5 C7.22385763,5 7,5.22385763 7,5.5 C7,5.77614237 7.22385763,6 7.5,6 L13.5,6 C13.7761424,6 14,5.77614237 14,5.5 C14,5.22385763 13.7761424,5 13.5,5 L7.5,5 Z M7.5,7 C7.22385763,7 7,7.22385763 7,7.5 C7,7.77614237 7.22385763,8 7.5,8 L10.5,8 C10.7761424,8 11,7.77614237 11,7.5 C11,7.22385763 10.7761424,7 10.5,7 L7.5,7 Z" fill="#000000" opacity="0.3" />
+														<path d="M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z" fill="#000000" />
+													</g>
+												</svg>
+												<!--end::Svg Icon-->
+											</span>
+											<span class="card-title font-weight-bolder text-dark-75 font-size-h2 mb-0 mt-6 d-block ">25 <span class="font-size-lg font-weight-bold text-muted"> Agents</span> </span> 
+											<span class="font-weight-bolder font-size-lg text-dark">40</span> <span class="font-weight-bold text-muted font-size-md"> Terminals</span>
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::Stats Widget 29-->
+								</div>
+								<div class="col-lg-5">
+									<!--begin::Stats Widget 15-->
+									<div href="#" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+										<!--begin::Body-->
+										<div class="card-body d-flex align-items-center justify-content-between flex-wrap">
+											<div class="mr-2">
+												<span class="svg-icon svg-icon-white svg-icon-3x ml-n1">
+													<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<rect x="0" y="0" width="24" height="24"></rect>
+															<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5"></rect>
+															<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5"></rect>
+															<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5"></rect>
+															<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5"></rect>
+														</g>
+													</svg>
+													<!--end::Svg Icon-->
+												</span>
+												<div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">120,000</div>
+												<div class="font-weight-bolder text-inverse-success font-size-lg">Income Wallet</div>
+											</div>
+											
+											<div class="mb-20">
+												<a href="agg-transfer.html" class="btn btn-sm btn-transparent-white font-weight-bolder py-2 px-4">Transfer</a>
+											</div>
+											
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::Stats Widget 15-->
+								</div>
+								<div class="col-lg-5">
+									<!--begin::Stats Widget 18-->
+									<div href="#" class="card card-custom bg-dark bg-hover-state-dark card-stretch gutter-b">
+										<!--begin::Body-->
+										<div class="card-body d-flex align-items-center justify-content-between flex-wrap">
+											<div class="mr-2">
+												<span class="svg-icon svg-icon-white svg-icon-3x ml-n1">
+													<!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<rect x="0" y="0" width="24" height="24"></rect>
+															<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5"></rect>
+															<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5"></rect>
+															<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5"></rect>
+															<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5"></rect>
+														</g>
+													</svg>
+													<!--end::Svg Icon-->
+												</span>
+												<div class="text-inverse-dark font-weight-bolder font-size-h5 mb-2 mt-5">50,000</div>
+												<div class="font-weight-bolder text-inverse-dark font-size-lg">Trading Wallet</div>
+											</div>
+											<div class="mb-20">
+												<a href="agg-transfer.html" class="btn btn-sm btn-transparent-light font-weight-bolder py-2 px-4">Fund wallet</a>
+											</div>
+											
+											
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::Stats Widget 18-->
+								</div>
+								
+							</div>
+							<!-- <div class="row">
+								<div class="card card-custom gutter-b" style="height: 150px"> -->
+									<!--begin::Body-->
+									<!-- <div class="card-body d-flex align-items-center justify-content-between flex-wrap">
+										<div class="mr-2">
+											<h3 class="font-weight-bolder">Create CRM Reports</h3>
+											<div class="text-dark-50 font-size-lg mt-2">Generate the latest CRM Report</div>
+										</div>
+										<a href="#" class="btn btn-primary font-weight-bold py-3 px-6">Start Now</a>
+									</div> -->
+									<!--end::Body-->
+								<!-- </div>
+							</div> -->
+							
+							<div class="row card card-custom col-xl-12 ml-0">
+								<div class="card-header">
+									<div class="card-title">
+										<h3 class="card-label">Statistics</h3>
+										<span class="text-muted">From Today</span>
+									</div>
+									<div class="card-toolbar">
+										<ul class="nav nav-bold nav-pills">
+											<li class="nav-item">
+												<a class="nav-link active" data-toggle="tab" href="#kt_tab_pane_7_1">Today</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link " data-toggle="tab" href="#kt_tab_pane_7_2">Total</a>
+											</li>
+											<!-- <li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Year</a>
+												<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+													<a class="dropdown-item" data-toggle="tab" href="#kt_tab_pane_7_3">Action</a>
+													<a class="dropdown-item" data-toggle="tab" href="#kt_tab_pane_7_3">Another action</a>
+													<a class="dropdown-item" data-toggle="tab" href="#kt_tab_pane_7_3">Something else here</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" data-toggle="tab" href="#kt_tab_pane_7_3">Separated link</a>
+												</div>
+											</li> -->
+										</ul>
+									</div>
+								</div>
 
-                                                            <div class="card-body" data-wizard-type="step-content" data-wizard-state="current">
 
-																<div class="mt-15 mb-10 font-weight-bold text-dark"><h4 class="card-label">Basic Information</h4></div>
+								<div class="">
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="kt_tab_pane_7_1" role="tabpanel" aria-labelledby="kt_tab_pane_7_1">
+											<!-- Area chart -->
+											<div class="row">
+												<div class="col-lg-4 col-md-12 col-sm-12">
+													<!--begin::Card-->
+													
+														<div class="card-body">
+															<!--begin::Chart-->
+															<div id="chart_11" class="d-flex justify-content-center"></div>
+															<!--end::Chart-->
+														</div>
+												
+													<!--end::Card-->
+												</div>
+
+												<div class="col-lg-8">
+													<!--begin::Card-->
+													<div class="card card-custom gutter-b">
+														
+														<div class="card-body">
+															<!--begin::Chart-->
+															<div id="chart_2"></div>
+															<!--end::Chart-->
+														</div>
+													</div>
+													<!--end::Card-->
+													
+												</div>
+												
+											</div>
+											<!-- End Area chart -->
+										</div> 
+
+										<div class="tab-pane fade" id="kt_tab_pane_7_2" role="tabpanel" aria-labelledby="kt_tab_pane_7_2">
+											
+										</div>
+										<!-- <div class="tab-pane fade" id="kt_tab_pane_7_3" role="tabpanel" aria-labelledby="kt_tab_pane_7_3">Aldus PageMaker including versions lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> -->
+									</div>
+								</div>
 
 
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-4">
-                                                                        <label>Agent Type:</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-																					<option value="">Select Type</option>
-																					<option value="AX">Aggregator</option>
-																					<option value="AL">Sub-Aggregator</option>
-																					<option value="AF">Sole-Agent-1</option>
-																					<option value="AF">Sole-Agent-2</option>
-																					<option value="DZ">Sub-Agent</option>
-                                                                                </select>
-                                                                            </div>
-                                                                    
-                                                                        <!-- <span class="form-text text-muted">Select agent type</span> -->
-                                                                    </div>
-                                                                    
-                                                                    <div class="col-lg-4">
-                                                                        <label>First Name:</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-user"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                            <input type="text" class="form-control" placeholder="Ayobami" disabled />
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter agent's first name</span> -->
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <label>Last Name:</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-user"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                            <input type="text" class="form-control" placeholder="Ajanaku" disabled />
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter agent's last name</span> -->
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
+							</div>
 
-                                                                    <div class="col-lg-4">
-                                                                        <label>Email:</label>
-                                                                        <input type="email" class="form-control" placeholder="Enter Email"  />
-                                                                        <!-- <span class="form-text text-muted">Please enter your email</span> -->
-                                                                    </div>
+							
 
-																	
-																	<div class="col-lg-4">
-                                                                        <label>Phone number:</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-info-circle"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                            <input type="text" class="form-control" placeholder="08047512572"/>
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter fax</span> -->
-                                                                    </div>
-
-                                                                    <div class="col-lg-4">
-                                                                        <label>Gender:</label>
-                                                                        <div class="radio-inline">
-                                                                            <label class="radio radio-solid">
-                                                                            <input type="radio" name="example_2" checked="checked" value="2" />
-                                                                            <span></span>Female</label>
-                                                                            <label class="radio radio-solid">
-                                                                            <input type="radio" name="example_2" value="2" />
-                                                                            <span></span>Male</label>
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please select user group</span> -->
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-4">
-                                                                        <label>Date of Birth:</label>
-                                                                        <div class="input-group date">
-                                                                            <input type="text" class="form-control" value="05/20/2017" disabled />
-                                                                            <div class="input-group-append">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-calendar"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter your contact</span> -->
-                                                                    </div>
-																	
-                                                                </div>
-                                                               
-																<div class="mt-15 mb-10 font-weight-bold text-dark">
-																	<h4 class="card-label">Location & Others</h4>
-																</div>
-
-																<div class="form-group row"> 
-																	<div class="col-lg-12">
-																		<label>Address:</label>
-																		<div class="input-group">
-																			<input type="text" class="form-control" placeholder="Enter your address" />
-																			<div class="input-group-append">
-																				<span class="input-group-text">
-																					<i class="la la-map-marker"></i>
-																				</span>
-																			</div>
+							<!--begin::Advance Table: Widget 7-->
+							<div class="card card-custom gutter-b gutter-t col-xl-12">
+								<!--begin::Header-->
+								<div class="card-header flex-wrap border-0 pt-6 pb-0">
+									<div class="card-title">
+										<h3 class="card-label">Agent's Performance</h3>
+									</div>
+									<div class="card-toolbar">
+										<!--begin::Dropdown-->
+										<div class="dropdown dropdown-inline mr-2">
+											<button type="button" class="btn btn-light-primary font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span class="svg-icon svg-icon-md">
+												<!--begin::Svg Icon | path:assets/media/svg/icons/Design/PenAndRuller.svg-->
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<rect x="0" y="0" width="24" height="24" />
+														<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
+														<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
+													</g>
+												</svg>
+												<!--end::Svg Icon-->
+											</span>Export</button>
+											<!--begin::Dropdown Menu-->
+											<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+												<!--begin::Navigation-->
+												<ul class="navi flex-column navi-hover py-2">
+													<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
+													<li class="navi-item">
+														<a href="#" class="navi-link">
+															<span class="navi-icon">
+																<i class="la la-print"></i>
+															</span>
+															<span class="navi-text">Print</span>
+														</a>
+													</li>
+													<li class="navi-item">
+														<a href="#" class="navi-link">
+															<span class="navi-icon">
+																<i class="la la-copy"></i>
+															</span>
+															<span class="navi-text">Copy</span>
+														</a>
+													</li>
+													<li class="navi-item">
+														<a href="#" class="navi-link">
+															<span class="navi-icon">
+																<i class="la la-file-excel-o"></i>
+															</span>
+															<span class="navi-text">Excel</span>
+														</a>
+													</li>
+													<li class="navi-item">
+														<a href="#" class="navi-link">
+															<span class="navi-icon">
+																<i class="la la-file-text-o"></i>
+															</span>
+															<span class="navi-text">CSV</span>
+														</a>
+													</li>
+													<li class="navi-item">
+														<a href="#" class="navi-link">
+															<span class="navi-icon">
+																<i class="la la-file-pdf-o"></i>
+															</span>
+															<span class="navi-text">PDF</span>
+														</a>
+													</li>
+												</ul>
+												<!--end::Navigation-->
+											</div>
+											<!--end::Dropdown Menu-->
+										</div>
+										<!--end::Dropdown-->
+										<!--begin::Button-->
+									  
+										<!--end::Button-->
+									</div>
+								</div>
+								<div class="card-body">
+									<!--begin: Search Form-->
+									<!--begin::Search Form-->
+									<div class="mb-7">
+										<div class="row align-items-center">
+											<div class="col-lg-12 col-xl-12">
+												<div class="row align-items-center">
+													<!-- <div class="col-md-3 my-2 my-md-0">
+														<div class="input-icon">
+															<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+															<span>
+																<i class="flaticon2-search-1 text-muted"></i>
+															</span>
+														</div>
+													</div> -->
+													<div class="col-md-2 my-2 px-0 my-md-0">
+														<div class="d-flex align-items-center">
+															<label class="mr-3 mb-0 d-none d-md-block">Status:</label>
+															<select class="form-control" id="kt_datatable_search_status">
+																<option value="">All</option>
+																<option value="1">Success</option>
+																<option value="2">Failed</option>
+																
+															</select>
+														</div>
+													</div>
+													<div class="col-md-3 my-2 my-md-0">
+														<div class="d-flex align-items-center">
+															<label class="mr-3 mb-0 d-none d-md-block">Type:</label>
+															<select class="form-control" id="kt_datatable_search_type">
+																<option value="">All</option>
+																<option value="1">Withdrawal</option>
+																<option value="2">Deposit</option>
+																<!-- <option value="3">Agent</option> -->
+															</select>
+														</div>
+													</div>
+													<div class="col-md-3 my-2 my-md-0">
+														<div class="d-flex align-items-center">
+															<label class="mr-3 mb-0 d-none d-md-block">Date:</label>
+																
+																<div class="input-daterange input-group" id="kt_datepicker_5">
+																		<input type="text" class="form-control" name="start" />
+																		<div class="input-group-append">
+																			<span class="input-group-text">
+																				<i class="la la-ellipsis-h"></i>
+																			</span>
 																		</div>
-																		<!-- <span class="form-text text-muted">Please enter your email</span> -->
-																	</div>
-																</div>
-																
-
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-6">
-                                                                        <label>State of Origin:</label>
-                                                                            <div class="input-group">
-																				<select  class="form-control">
-																					<option value="">Select State</option>
-																					<option value="AF">Abia</option>
-																					<option value="AX">Adamawa</option>
-																					<option value="AL">Akwa-Ibom</option>
-																					<option value="DZ">Anambra</option>
-																					<option value="DZ">Bauchi</option>
-																					<option value="DZ">Bayelsa</option>
-																					<option value="DZ">Benue</option>
-																					<option value="DZ">Borno</option>
-																					<option value="DZ">Cross River</option>
-																					<option value="DZ">Delta</option>
-																					<option value="DZ">Ebonyi</option>
-																					<option value="DZ">Edo</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter your postcode</span> -->
-                                                                    </div>
-                                                                    <div class="col-lg-6">
-                                                                        <label>LGA</label>
-																		<div class="input-group">
-																			<select  class="form-control">
-																				<option value="">Select LGA </option>
-																				<option value="AF">Kosofe</option>
-																				<option value="AX">Ajah</option>
-																				<option value="AL">Ikeja</option>
-																				<option value="DZ">Surulere</option>
-																				<option value="DZ">Aguda</option>
-																				<option value="DZ">Obalende</option>
-																				<option value="DZ">Oworonshoki</option>
-																				<option value="DZ">Mowe</option>
-																				<option value="DZ">Ibafo</option>
-																			</select>
-																		</div>
-                                                                        <!-- <span class="form-text text-muted">Please enter your email</span> -->
-																	</div>
-                                                                    
-																</div>
-
-																<div class="form-group row">
-																	<div class="col-lg-6">
-                                                                        <label>Highest Level of Education:</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-                                                                                    <option value="">Highest Level of Education</option>
-																					<option value="DZ">FLSC</option>
-																					<option value="DZ">SSCE</option>
-																					<option value="DZ">Diploma</option>
-																					<option value="DZ">NCE</option>
-                                                                                    <option value="DZ">OND</option>  
-																					<option value="DZ">HND</option>                                                                                                                                                            
-																					<option value="AX">B.Sc</option>
-																					<option value="AF">M.Sc</option>
-																					<option value="AL">PHD</option>
-                                                                                </select>
-                                                                            </div>
-                                                                    
-                                                                        <!-- <span class="form-text text-muted">Select agent type</span> -->
-                                                                    </div>
-																</div>
-																
-																<div class="mt-15 mb-10 font-weight-bold text-dark">
-																	<h4 class="card-label">Enter ID Information</h4>
-																</div>
-
-																<div class="form-group row">
-                                                                    <div class="col-lg-6">
-                                                                        <label>ID Type:</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-																					<option value="">Select type</option>
-																					<option value="AF">Voters card</option>
-																					<option value="AX">Drivers License</option>
-																					<option value="AL">National ID</option> -->
-																					<option value="DZ">Wema Bank</option>
-                                                                                 </select>
-                                                                            </div>
-                                                                    
-                                                                        <!-- <span class="form-text text-muted">Select agent type</span> -->
-                                                                    </div>
-                                                                    
-                                                                    <div class="col-lg-6">
-                                                                        <label>ID Number</label>
-                                                                        <div class="input-group">
-                                                                            <!-- <div class="input-group-prepend">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-user"></i>
-                                                                                </span>
-                                                                            </div> -->
-                                                                            <input type="text" class="form-control" placeholder="ID Number" />
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter agent's first name</span> -->
-                                                                    </div>
-                                                                   
-                                                                </div>
-																
-																
-
-																<div class="mt-15 mb-10 font-weight-bold text-dark">
-																	<h4 class="card-label">Business Information</h4>
-																</div>
-
-																<div class="form-group row">
-                                                                    <div class="col-lg-6">
-                                                                        <label>Business Name:</label>
-                                                                        <input type="email" class="form-control" placeholder="Business Name" />
-                                                                        <!-- <span class="form-text text-muted">Please enter your full name</span> -->
-                                                                    </div>
-                                                                    <div class="col-lg-6">
-                                                                        <label>Business Start Date:</label>
-                                                                        <div class="input-group date">
-                                                                            <input type="text" class="form-control" readonly="readonly" value="05/20/2017" id="kt_datepicker_3" />
-                                                                            <div class="input-group-append">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-calendar"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                   
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-6">
-                                                                        <label>Business Address:</label>
-                                                                        <div class="input-group">
-                                                                            <input type="text" class="form-control" placeholder="Enter business location" />
-                                                                            <div class="input-group-append">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-map-marker"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter your address</span> -->
-																	</div>
-																	<div class="col-lg-6">
-                                                                        <label>Business Registration Number:</label>
-                                                                        <input type="email" class="form-control" placeholder="Business Registration Number" />
-                                                                        <!-- <span class="form-text text-muted">Please enter your full name</span> -->
-                                                                    </div>
-                                                                </div>
-                                                              
-                                                            </div>
-                                                            <!--end: Wizard Step 1-->
-                                                            <!--begin: Wizard Step 2-->
-                                                            <div class="card-body" data-wizard-type="step-content">
-                                                                
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-4">
-                                                                        <label>Agent Bank:</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-																					<option value="">Select Bank</option>
-																					<option value="AF">Access Bank</option>
-																					<option value="AX">GT Bank</option>
-																					<option value="AL">Fidelity Bank</option>
-																					<option value="DZ">Wema Bank</option>
-                                                                                </select>
-                                                                            </div>
-                                                                    
-                                                                        <!-- <span class="form-text text-muted">Select agent type</span> -->
-                                                                    </div>
-                                                                    
-                                                                    <div class="col-lg-4">
-                                                                        <label>BVN</label>
-                                                                        <div class="input-group">
-                                                                            <!-- <div class="input-group-prepend">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-user"></i>
-                                                                                </span>
-                                                                            </div> -->
-                                                                            <input type="text" class="form-control" placeholder="221874580222" disabled />
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter agent's first name</span> -->
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <label>Account number</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                <!-- <span class="input-group-text">
-                                                                                    <i class="la la-user"></i>
-                                                                                </span> -->
-                                                                            </div>
-                                                                            <input type="text" class="form-control" placeholder="Account number" />
-                                                                        </div>
-                                                                        <!-- <span class="form-text text-muted">Please enter agent's last name</span> -->
-                                                                    </div>
-																</div>
-																<div class="mt-15 mb-10 font-weight-bold text-dark">
-																	<h4 class="card-label">Charge Profile</h4>
-																</div>
-                                                                 <div class="form-group row">
-
-                                                                    <div class="col-lg-3">
-                                                                        <label>Charge Profile:</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-																					<option value="">Default</option>
-																					<option value="AX">Top Performing Agents</option>
-																					<option value="AL">Sole Agents</option>
-																					<option value="AF">Sub-Agents</option>
-																					<option value="DZ">Basic</option>
-
-                                                                                </select>
-                                                                            </div>
-                                                                    
-																	</div>
-																	<!-- <div class="col-lg-2">
-                                                                        <label>Lower Bound</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                               
-                                                                            </div>
-                                                                            <input type="number" class="form-control" placeholder="0" />
-                                                                        </div>
-																	</div>
-																	<div class="col-lg-2">
-                                                                        <label>Upper Bound</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                               
-                                                                            </div>
-                                                                            <input type="number" class="form-control" placeholder="0" />
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2">
-                                                                        <label>Commission %:</label>
-
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                <span class="input-group-text">
-                                                                                    <i class="la la-percentage"></i>
-                                                                                </span>
-                                                                            </div>
-                                                                            <input type="email" class="form-control" placeholder="0.7" /> 
-                                                                        </div>
-																	</div>
-																	<div class="col-lg-2">
-                                                                        <label>Amount</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                
-                                                                            </div>
-                                                                            <input type="number" class="form-control" placeholder="0" />
-                                                                        </div>
-																	</div>
-																	<div class="col-lg-2">
-                                                                        <label>POS Tran fee</label>
-                                                                        <div class="input-group">
-                                                                            <div class="input-group-prepend">
-                                                                                
-                                                                            </div>
-                                                                            <input type="number" class="form-control" placeholder="0" />
-                                                                        </div>
-																		<span class="btn btn-hover-text-primary">edit</span>
-																	</div> -->
+																		<input type="text" class="form-control" name="end" />
 																	
-                                                                    
-																</div> 
-																
-                                                                
-                                                              
-                                                            </div>
-                                                            <!--end: Wizard Step 2-->
-															<!--begin: Wizard Step 3-->
-															<div class="card-body" data-wizard-type="step-content">
-
-                                                                <div class="mt-15 mb-10 font-weight-bold text-dark">
-																	<h4 class="card-label">Upload ID card images</h4>
+																	<!-- <span class="form-text text-muted">Linked pickers for date range selection</span> -->
 																</div>
+														</div>
+													</div>
+													<div class="col-md-3 my-2 my-md-0">
+														<div class="input-icon">
+															<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+															<span>
+																<i class="flaticon2-search-1 text-muted"></i>
+															</span>
+														</div>
+													</div>
 
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-6">
-                                                                        <label>ID Card Front:</label>
-                                                                           
-                                                                                <div class="dropzone dropzone-default" id="kt_dropzone_1">
-                                                                                    <div class="dropzone-msg dz-message needsclick">
-                                                                                        <h3 class="dropzone-msg-title font-weight-normal">Please drop image of preferred ID (front) or click to upload.</h3>
-                                                                                        <!-- <span class="dropzone-msg-desc">This is just a demo dropzone. Selected files are
-                                                                                        <strong>not</strong>actually uploaded.</span> -->
-                                                                                    </div>
-                                                                                </div>
-                                                                            
-                                                                    </div>
+													<div class="col-md-1 my-2 px-0 my-md-0">
+														<a href="#" class="btn btn-light-primary px-2 font-weight-bold">Go</a>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
+												<a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
+											</div> -->
+										</div>
+									</div>
+									<!--end::Search Form-->
+									<!--end: Search Form-->
+									<!--begin: Datatable-->
+									<div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
+									<!--end: Datatable-->
+								</div>
+								<!--end::Body-->
+							</div>
+							<!--end::Advance Table Widget 7-->
 
-																	<div class="col-lg-6">
-                                                                        <label>ID Card Back:</label>
-                                                                           
-                                                                                <div class="dropzone dropzone-default" id="kt_dropzone_1">
-                                                                                    <div class="dropzone-msg dz-message needsclick">
-                                                                                        <h3 class="dropzone-msg-title font-weight-normal">Please drop image of preferred ID (back) or click to upload.</h3>
-                                                                                        <!-- <span class="dropzone-msg-desc">This is just a demo dropzone. Selected files are
-                                                                                        <strong>not</strong>actually uploaded.</span> -->
-                                                                                    </div>
-                                                                                </div>
-                                                                            
-                                                                    </div>
-                                                                </div>
-																
-																<div class="mt-15 mb-10 font-weight-bold text-dark">
-																	<h4 class="card-label">Others</h4>
-																</div>
-                                                                <div class="form-group row">
-                                                                    <div class="col-lg-4">
-                                                                        <label>Utility Bill:</label>
-                                                                           
-                                                                                <div class="dropzone dropzone-default" id="kt_dropzone_3">
-                                                                                    <div class="dropzone-msg dz-message needsclick">
-                                                                                        <h3 class="dropzone-msg-title font-weight-normal">Drop files here or click to upload.</h3>
-                                                                                        <!-- <span class="dropzone-msg-desc">This is just a demo dropzone. Selected files are
-                                                                                        <strong>not</strong>actually uploaded.</span> -->
-                                                                                    </div>
-                                                                                </div>
-                                                                            
-                                                                    </div>
-
-																	<div class="col-lg-4">
-                                                                        <label >Passport</label>
-                                                                           
-                                                                                <div class="dropzone dropzone-default" id="kt_dropzone_2">
-                                                                                    <div class="dropzone-msg dz-message needsclick">
-                                                                                        <h3 class="dropzone-msg-title font-weight-normal">Drop files here or click to upload.</h3>
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                            
-                                                                    </div>
-
-                                                                    <div class="col-lg-4">
-                                                                        <label >Signature</label>
-                                                                           
-                                                                                <div class="dropzone dropzone-default" id="kt_dropzone_4">
-                                                                                    <div class="dropzone-msg dz-message needsclick">
-                                                                                        <h3 class="dropzone-msg-title font-weight-normal">Drop files here or click to upload.</h3>
-                                                                                        
-                                                                                    </div>
-                                                                                </div>
-                                                                            
-                                                                    </div>
-
-                                                                    
-
-                                                                    
-                                                                </div>
-                                                                
-                                                              
-                                                            </div>
-                                                            
-                                                            <!--end: Wizard Step 3-->
-															<!--begin: Wizard Step 4-->
-															<div class="card-body" data-wizard-type="step-content" >
-                                                                <div class="form-group row">
-																	<div class="col-lg-4">
-                                                                        <label>Terminal Type:</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-																					<option value="">Select Type</option>
-																					<option value="AX">PACS</option>
-																					<option value="AL">POSVAS</option>
-																					<option value="AF">EPMS</option>
-                                                                                </select>
-                                                                            </div>
-                                                                    
-                                                                        <!-- <span class="form-text text-muted">Select agent type</span> -->
-																	</div>
-																	
-																	<div class="col-lg-4">
-                                                                        <label>Terminal ID</label>
-                                                                            <div class="input-group">
-																				<select class="form-control">
-																					<option value="">Select ID</option>
-																					<option value="AX">2XMON1AF</option>
-																					<option value="AL">2VMON1PD</option>
-																					<option value="AF">2XJON2AF</option>
-																					<option value="AF">2XMON1AF</option>
-																					<option value="DZ">2TMON3AF</option>
-																					<option value="AX">2XMON1AF</option>
-																					<option value="AL">2VMON1PD</option>
-																					<option value="AF">2XMON1AF</option>
-																					<option value="DZ">2TMON3AF</option>
-																					<option value="AF">2XMON1AF</option>
-																					<option value="DZ">2TMON3AF</option>
-                                                                                </select>
-                                                                            </div>
-                                                                    
-                                                                        <!-- <span class="form-text text-muted">Select agent type</span> -->
-																	</div>
-																	
-																	<div class="col-lg-4">
-                                                                        <label>Serial Number:</label>
-                                                                        <input type="email" class="form-control" placeholder="SN2345X00138103" readonly/>
-                                                                        <!-- <span class="form-text text-muted">Please enter your full name</span> -->
-                                                                    </div>
+							
 
 
-                                                                   
-                                                                </div>
-                                                              
-                                                            </div>
-                                                            
-                                                            <!--end: Wizard Step 4-->
-                                                            <!--begin: Wizard Actions-->
-                                                            <div class="d-flex justify-content-between border-top mt-5 pt-10">
-                                                                <div class="mr-2">
-                                                                    <button type="button" class="btn btn-light-primary font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-prev">Previous</button>
-                                                                </div>
-                                                                <div>
-                            
-                                                                    <button type="button" class="btn btn-primary font-weight-bold text-uppercase px-9 py-4" id="kt_sweetalert_demo_4_3" data-wizard-type="action-submit">Submit</button>
-                                                                    <button type="button" class="btn btn-primary font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-next">Next</button>
-                                                                </div>
-                                                            </div>
-                                                            <!--end: Wizard Actions-->
-                                                        </form>
-                                                        <!--end: Wizard Form-->
-                                                    <!-- </div> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                        <!--end: Wizard Bpdy-->
-                                    </div>
-                                    <!--end: Wizard-->
-                                </div>
-                            </div>
-                        </div>
+							
 
+							
+							
+							<!--begin::Container-->
+							<!--end::Container-->
+						</div>
 						<!--end::Entry-->
 					</div>
 					<!--end::Content-->
@@ -924,7 +659,7 @@
 							<!--begin::Copyright-->
 							<div class="text-dark order-2 order-md-1">
 								<span class="text-muted font-weight-bold mr-2">2020©</span>
-								<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">3lineng.com</a>
+								<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">Keenthemes</a>
 							</div>
 							<!--end::Copyright-->
 							<!--begin::Nav-->
@@ -1093,7 +828,7 @@
 							</div>
 							<div class="navi-text">
 								<div class="font-weight-bold">My Tasks</div>
-								<div class="text-muted">latest tasks and projects</div>
+								<div class="text-muted">latest tasks and project</div>
 							</div>
 						</div>
 					</a>
@@ -2489,14 +2224,12 @@
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js?v=7.0.5"></script>
-        <!-- <script src="assets/js/pages/crud/ktdatatable/base/data-local.js?v=7.0.5"></script>	 -->
-        <script src="assets/js/pages/custom/wizard/wizard-4.js?v=7.0.5"></script>
-        <script src="assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js?v=7.0.5"></script> 	
-        <script src="assets/js/pages/crud/file-upload/dropzonejs.js?v=7.0.5"></script>
-        <script src="assets/js/pages/features/miscellaneous/sweetalert2.js?v=7.0.5"></script>
+		<script src="assets/js/pages/crud/ktdatatable/base/data-aggregator-agents.js"></script>
+		<script src="assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js?v=7.0.5"></script>
 
-	
-
+		<!--begin::Page Scripts(added by Zion this page)-->
+		<script src="assets/js/pages/features/charts/apexcharts.js?v=7.0.5"></script>
+		<!--end::Page Scripts-->
 
 
 		<!--end::Page Scripts-->
