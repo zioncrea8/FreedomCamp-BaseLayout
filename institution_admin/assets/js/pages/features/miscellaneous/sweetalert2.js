@@ -406,6 +406,22 @@ var KTSweetAlert2Demo = function () {
 			})
 			
 		});
+		$("#kt_sweetalert_demo_16b").click(function (e) {
+			Swal.fire({
+				title: "Successfull!",
+				text: "Charge Profile Saved!",
+				icon: "success",
+				buttonsStyling: false,
+				confirmButtonText: "Continue!",
+				
+				customClass: {
+					confirmButton: "btn btn-primary"
+				}
+			}).then(function (result) {
+				window.location.href = "configuration-commissions-charge-controller.html";
+			})
+			
+		});
 
 		$("#kt_sweetalert_demo_17").click(function (e) {
 			Swal.fire({
